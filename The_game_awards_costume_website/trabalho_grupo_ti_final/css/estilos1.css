@@ -1,0 +1,47 @@
+body.ll{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+
+}
+div.ctn{
+    width:100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.tex{
+    color: goldenrod;
+    margin-bottom: 25px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.carregar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carregar .line-box1{
+    padding: 2px;
+    width: 40%;
+    height: 20px;
+    border: 2px solid #267191;
+    border-radius: 20px;
+}
+.carregar .line-box1 .line1{
+    height: 20px;
+    border-radius: 20px;
+    background-color: gold;
+    animation: loading 5s forwards cubic-bezier(0,0,0,0);
+}
+@keyframes loading{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
